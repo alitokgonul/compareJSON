@@ -25,7 +25,7 @@ glob("workflow/*.mwf", (err, files) => {
     		childShapes = dataJson.workflow_contents.childShapes;
     			childShapes.map(el => {
             // check if the xor exist in the flow
-			if(el.stencil.id === "Exclusive_Databased_Gateway") {
+    				if(el.stencil.id === "Exclusive_Databased_Gateway") {
               const outgoing = el.outgoing;
               const signals = JSON.parse(el.properties.signalcfg).signals;
               outgoingArr = [];
